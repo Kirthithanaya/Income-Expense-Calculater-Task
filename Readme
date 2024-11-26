@@ -1,0 +1,23 @@
+# Income Expense Calculator
+
+This project is a simple web application that helps users manage their income and expenses. Users can add, edit, and delete entries while viewing their financial summary.
+
+## Features
+- Add, update, and delete income or expense entries.
+- View total income, total expenses, and net balance.
+- Filter entries by type (All, Income, Expense).
+- Data is saved in local storage for persistence.
+
+## Technologies
+- HTML, CSS, JavaScript
+
+## How to Use
+1. Enter a description and amount.
+2. Choose the type (Income/Expense).
+3. Click "Add Entry" to save the data.
+4. Use the edit and delete buttons to manage entries.
+5. Use the filter options to display specific data.
+
+## Setup
+1. Clone the repository.
+2. Open `index.html` in a browser.

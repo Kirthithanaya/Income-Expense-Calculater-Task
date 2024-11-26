@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/illustration-3d-income-tax-expense-calculator-graph-showing_737078-776.jpg" type="image/x-icon">
+    <title>Income-Expense-Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Expense Calculator</h1>
+        <div class="balance">
+          <p>Total Income: <span id="total-income">0</span></p>
+          <p>Total Expenses: <span id="total-expenses">0</span></p>
+          <p>Net Balance: <span id="net-balance">0</span></p>
+        </div>
+    
+        <form id="entry-form">
+          <input type="text" id="description" placeholder="Description" required>
+          <input type="number" id="amount" placeholder="Amount" required>
+          <div class="radio-buttons">
+            <label>
+              <input type="radio" name="type" value="income" required> Income
+            </label>
+            <label>
+              <input type="radio" name="type" value="expense" required> Expense
+            </label>
+          </div>
+          <button type="submit">Add Entry</button>
+          <button type="button" id="reset">Reset</button>
+        </form>
+    
+        <div class="filters">
+          <label>
+            <input type="radio" name="filter" value="all" checked> All
+          </label>
+          <label>
+            <input type="radio" name="filter" value="income"> Income
+          </label>
+          <label>
+            <input type="radio" name="filter" value="expense"> Expense
+          </label>
+        </div>
+    
+        <ul id="entry-list"></ul>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
